@@ -1,5 +1,5 @@
 {
-    "name": "cmdisp/monolog-microsoft-teams",
+    "name": "ssswang/monolog-microsoft-teams",
     "description": "Monolog Handler for sending messages to Microsoft Teams using the Incoming Webhook connector",
     "license": "MIT",
     "require": {
