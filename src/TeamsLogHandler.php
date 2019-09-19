@@ -1,5 +1,5 @@
 <?php
-namespace CMDISP\MonologMicrosoftTeams;
+namespace MonologMicrosoftTeams;
 
 use Monolog\Logger;
 use Monolog\Handler\AbstractProcessingHandler;

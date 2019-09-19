@@ -1,6 +1,6 @@
 <?php
 
-namespace CMDISP\MonologMicrosoftTeams;
+namespace MonologMicrosoftTeams;
 
 class TeamsMessage implements \ArrayAccess, \JsonSerializable
 {
