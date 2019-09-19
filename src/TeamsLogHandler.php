@@ -45,7 +45,7 @@ class TeamsLogHandler extends AbstractProcessingHandler
         return new TeamsMessage([
             'title' => $record['level_name'] . ': ' . $record['message'],
             'text' => $record['formatted'],
-            'themeColor' => self::$levelColors[$record['level']] ?? self::$levelColors[$this->level],
+            'themeColor' => self::$levelColors[$record['level']] ? self::$levelColors[$record['level']] : self::$levelColors[$this->level],
         ]);
     }
 
