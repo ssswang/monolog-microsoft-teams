@@ -43,7 +43,7 @@ class TeamsMessage implements \ArrayAccess, \JsonSerializable
      */
     public function offsetGet($offset)
     {
-        return $this->data[$offset] ?? null;
+        return $this->data[$offset] ? $this->data[$offset]: null;
     }
 
     /**
