@@ -22,6 +22,15 @@ $logger = new \Monolog\Logger('app');
 $logger->pushHandler(new \MonologMicrosoftTeams\TeamsLogHandler('INCOMING_WEBHOOK_URL', \Monolog\Logger::ERROR));
 ```
 
+## Usage with Laravel 5.4~5.5
+
+```php
+        $monolog = \Log::getMonolog();
+        $teamsHandler = new \MonologMicrosoftTeams\TeamsLogHandler(env('TEAMS_WEBHOOK_URL'), \Monolog\Logger::NOTICE);
+        $monolog->pushHandler($teamsHandler);
+```
+
+
 ## Usage with Laravel/Lumen framework (5.6+)
 
 Create a [custom channel](https://laravel.com/docs/master/logging#creating-custom-channels) 
