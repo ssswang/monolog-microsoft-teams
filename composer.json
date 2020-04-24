@@ -10,10 +10,5 @@
         "psr-4": {
             "MonologMicrosoftTeams\\": "src/"
         }
-    },
-	"config": {
-        "preferred-install": "dist",
-        "sort-packages": true,
-        "optimize-autoloader": true,
-	}
+    }
 }
