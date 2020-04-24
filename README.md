@@ -25,9 +25,9 @@ $logger->pushHandler(new \MonologMicrosoftTeams\TeamsLogHandler('INCOMING_WEBHOO
 ## Usage with Laravel 5.4~5.5
 
 ```php
-        $monolog = \Log::getMonolog();
-        $teamsHandler = new \MonologMicrosoftTeams\TeamsLogHandler(env('TEAMS_WEBHOOK_URL'), \Monolog\Logger::NOTICE);
-        $monolog->pushHandler($teamsHandler);
+$monolog = \Log::getMonolog();
+$teamsHandler = new \MonologMicrosoftTeams\TeamsLogHandler(env('TEAMS_WEBHOOK_URL'), \Monolog\Logger::NOTICE);
+$monolog->pushHandler($teamsHandler);
 ```
 
 
