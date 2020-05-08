@@ -13,7 +13,7 @@ You need webhook_url from Teams and also set mininum level of log message to be 
 
 ```php
 $logger = new \Monolog\Logger('app');
-$logger->pushHandler(new \MonologMicrosoftTeams\TeamsLogHandler('INCOMING_WEBHOOK_URL', \Monolog\Logger::ERROR));
+$logger->pushHandler(new \MonologMicrosoftTeams\TeamsLogHandler(env('TEAMS_WEBHOOK_URL'), \Monolog\Logger::ERROR));
 ```
 
 ## Usage with Laravel 5.4~5.5
