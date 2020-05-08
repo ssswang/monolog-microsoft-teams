@@ -10,12 +10,6 @@ $ composer require ssswang/monolog-microsoft-teams
 
 ## Usage
 You need webhook_url from Teams and also set mininum level of log message to be sent
-```php
-$logger = new \MonologMicrosoftTeams\TeamsLogger('INCOMING_WEBHOOK_URL', \Monolog\Logger::ERROR);
-$logger->error('Error message');
-```
-
-or
 
 ```php
 $logger = new \Monolog\Logger('app');
